@@ -1,0 +1,18 @@
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 50px;
+
+  background-color: #f0f032;
+
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+}
+
+label {
+  font-weight: bold;
+  font-size: larger;
+}

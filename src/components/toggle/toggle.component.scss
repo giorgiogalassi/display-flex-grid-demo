@@ -1,0 +1,38 @@
+:host {
+  --toggle-dimension: 50px;
+}
+
+label {
+  cursor: pointer;
+  width: var(--toggle-dimension);
+  height: calc(#{var(--toggle-dimension)} / 2);
+  background: var(--primary-color);
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(#{var(--toggle-dimension) / 2} - 10px);
+  height: calc(#{var(--toggle-dimension) / 2} - 10px);
+  background: #ffffff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: var(--secondary-color);
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 130px;
+}

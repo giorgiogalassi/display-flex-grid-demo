@@ -2,8 +2,8 @@
 
 :root {
   --box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.5);
-  --primary-color: rgb(145, 99, 176);
-  --secondary-color: rgb(234, 152, 63);
+  --primary-color: #107a8b;
+  --secondary-color: #2cb978;
 }
 
 label {
